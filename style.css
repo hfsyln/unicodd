@@ -173,6 +173,17 @@ header ul {
 
 .navigation {
     margin-top: 50px;
-    height: 50vh;
-    border: solid red;
+    height: 90vh;
+    
+}
+footer{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer a {
+    text-decoration: none;
+    color: black;
 }
