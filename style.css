@@ -6,64 +6,74 @@
 body {
     width: 100%;
 }
+
+
+/*********header*******/
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     padding: 10px;
-    border: solid red;
+    
 }
 
 header ul {
     list-style: none;
     display: flex;
     gap: 10px;
+    margin-left: 7rem;
+    
 }
 
 
-
+/****video part***/
 
 .videopart {
     width: 100%;
     height: 100vh;
-    position: relative;
+    position: relative;  
     border: solid black;
-    
-  
 }
+
 .invideo video {
     width: 100%;
     position: absolute
 }
-.üstyazılar {
-    border: solid red;
+.üstyazılar { 
     position: absolute;
     height: 40vh;
     width: 50vw;
     text-align: center;
+    top: 40%;
+    left: 25%;
+    font-size: 25px;
+    color: white;
 }
 
-
-
-
-
+/*****fısh****/
 .type-of-fısh {
     display: flex;
     margin: 20vh 5vw;
+    //border: solid green;
 }
 .fıshtype {
     width: 20%;
-    height: 30vh;
+    height: 40vh;
     gap: 10px;
-    border: solid yellow;
     text-align: center;
-    margin-top: 20px;
-    padding-top: 20px;
+    //border: solid yellow;
+    margin-top: 30px;
+    padding: 25px 25px;
+    
+}
+
+.fıshtype p {
+    line-height: 1.5rem;
+    margin-top: 1rem;
 }
 
 
-
-
+/****image and text **/
 .imgandtext {
     display: flex;
     padding: 10px;
@@ -71,7 +81,7 @@ header ul {
 
 .inimg {
     width: 50%;
-    border: solid green;
+    //border: solid green;
     margin:5px
 }
 .inimg img {
@@ -80,7 +90,7 @@ header ul {
 .intext {
     display: flex;
     width: 50%;
-    border: solid green;
+    //border: solid green;
     margin:5px;
     align-items: center;
     justify-content: center;
