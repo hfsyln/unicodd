@@ -27,3 +27,42 @@ document.addEventListener(`mousemove`, (e)=>{
         text.classList.add("intext1")
      }
 })*/
+
+document.querySelector(".hmbrg").addEventListener("click",()=>{
+     document.querySelector(".menübar").innerHTML = `
+     <nav class="navbar bg-light fixed-top">
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+               <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+               </li>
+               <ul class="nav-item nav-list"><a class="nav-link" href="#">Products</a>
+                    
+                    <li class="nav-iç">
+                         <a class="nav-link active" aria-current="page" href="#">Fresh fish</a>
+                    </li>
+                    <li class="nav-iç">
+                         <a class="nav-link active" aria-current="page" href="#">Salted fish</a>
+                    </li>
+                    <li class="nav-iç">
+                         <a class="nav-link active" aria-current="page" href="#">Stockfish</a>
+                    </li>
+                    <li class="nav-iç">
+                         <a class="nav-link active" aria-current="page" href="#">Roe</a>
+                    </li>
+                    <li class="nav-iç">
+                         <a class="nav-link active" aria-current="page" href="#">Dry fish</a>
+                    </li>
+
+               </ul>
+               <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About Us</a>
+               </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+               </li>
+          </ul>
+      </div>
+     </nav>
+     `
+})
