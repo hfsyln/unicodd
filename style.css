@@ -11,12 +11,11 @@ body {
 /*********header*******/
 header {
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
     padding: 10px;
     
 }
-
 header ul {
     list-style: none;
     display: flex;
@@ -24,15 +23,31 @@ header ul {
     margin-left: 7rem;
     
 }
+.headleft {
+    margin-left: 20rem;
+}
+.headrightul {
+    margin-right: 20rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    font-weight: bold;
+    
+}
+.headrightul li:hover {
+    color: rgb(69, 69, 232);
+}
 
 
 /****video part***/
 
 .videopart {
     width: 100%;
-    height: 100vh;
+    height: 114vh;
     position: relative;  
-    border: solid black;
+    /*border: solid black;*/
 }
 
 .invideo video {
@@ -46,22 +61,22 @@ header ul {
     text-align: center;
     top: 40%;
     left: 25%;
-    font-size: 25px;
+    font-size: 40px;
     color: white;
 }
 
 /*****fısh****/
 .type-of-fısh {
     display: flex;
-    margin: 20vh 5vw;
-    //border: solid green;
+    margin: 10vh 5vw;
+    border: solid green;
 }
 .fıshtype {
     width: 20%;
     height: 40vh;
     gap: 10px;
     text-align: center;
-    //border: solid yellow;
+    border: solid yellow;
     margin-top: 30px;
     padding: 25px 25px;
     
@@ -77,30 +92,63 @@ header ul {
 .imgandtext {
     display: flex;
     padding: 10px;
+    width: 100%;
+    height: 70vh;
+    border: solid green;
+    
 }
 
 .inimg {
+    position: absolute;
+    height: 70vh;
     width: 50%;
-    //border: solid green;
-    margin:5px
+    border: solid green;
+    left: -800px;
+    
+}
+
+.inimg1 {
+    height: 70vh;
+    width: 50%;
+    border: solid green;
+    transition: 3s;
+    transform:translateY(0);
+    left: 0;
 }
 .inimg img {
+    height: 100%;
     font-size: 100px;
 }
-.intext {
+.intext{
+    right: -800px;
+    height: 70vh;
     display: flex;
     width: 50%;
-    //border: solid green;
-    margin:5px;
+    border: solid green;
+    position: absolute;
     align-items: center;
     justify-content: center;
     background-color: rgb(230, 231, 230);
+    
+}
+.intext1 {
+    right: 0;
+    display: flex;
+    width: 50%;
+    border: solid green;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 231, 230);
+    transition: 3s;
+    transform: translateY(0);
 }
 .h2andp {
     width: 60%;   
 }
 
+/*** services and prd *****/
 .imgandtext1 {
+    border: solid green;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -110,7 +158,7 @@ header ul {
 }
 .inimg2 {
     width: 50%;
-    margin:5px;
+    height: 100%;
     display: flex;
     justify-content: end;
 }
@@ -147,8 +195,10 @@ header ul {
    
 }
 
+/***many prod *****/
 
 .imgandtext3{
+    /*border: solid green;*/
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -165,12 +215,12 @@ header ul {
     height: 40vh;
     margin: 15px;
 }
-.h2anda  .ina {
+.ina {
     background-color: rgb(138, 138, 181);
-    
+    margin: 15px auto;
     width: 15vw;
     height: 2rem;
-    margin: auto;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,12 +231,17 @@ header ul {
     color: white;
 }
 
+/* navigasyonn */
 .navigation {
-    margin-top: 50px;
-    height: 90vh;
+    /*border: solid rgb(128, 0, 30);*/
+    margin-top: 3vh;
+    height: 81vh;
     
 }
+
+/***son bölüm */  
 footer{
+
     margin: 10px;
     display: flex;
     flex-direction: column;
