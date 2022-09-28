@@ -5,27 +5,27 @@
 }
 body {
     width: 100%;
+    height: 2000px;
 }
 
 
 /*********header*******/
 header {
     display: flex;
-    justify-content:space-between;
     align-items: center;
     padding: 10px;
-    
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
 }
 header ul {
     list-style: none;
     display: flex;
     gap: 10px;
-    margin-left: 7rem;
-    
 }
-.headleft {
-    margin-left: 20rem;
-}
+
 .headrightul {
     margin-right: 20rem;
     font-size: 1.2rem;
@@ -44,6 +44,8 @@ header ul {
 /****video part***/
 
 .videopart {
+    
+    border: solid red;
     width: 100%;
     height: 114vh;
     position: relative;  
@@ -52,6 +54,7 @@ header ul {
 
 .invideo video {
     width: 100%;
+   height: 100%;
     position: absolute
 }
 .üstyazılar { 
@@ -70,17 +73,17 @@ header ul {
     display: flex;
     margin: 10vh 5vw;
     border: solid green;
+    height: 30vh;
 }
 .fıshtype {
     width: 20%;
-    height: 40vh;
+    height: 30vh;
     gap: 10px;
     text-align: center;
     border: solid yellow;
-    margin-top: 30px;
-    padding: 25px 25px;
-    
+    padding: 25px 25px; 
 }
+
 
 .fıshtype p {
     line-height: 1.5rem;
@@ -102,7 +105,7 @@ header ul {
     position: absolute;
     height: 70vh;
     width: 50%;
-    border: solid green;
+  /*  border: solid green;*/
     left: -800px;
     
 }
@@ -110,7 +113,7 @@ header ul {
 .inimg1 {
     height: 70vh;
     width: 50%;
-    border: solid green;
+   /* border: solid green;*/
     transition: 3s;
     transform:translateY(0);
     left: 0;
@@ -122,9 +125,8 @@ header ul {
 .intext{
     right: -800px;
     height: 70vh;
-    display: flex;
     width: 50%;
-    border: solid green;
+  /*  border: solid green;*/
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -132,10 +134,10 @@ header ul {
     
 }
 .intext1 {
-    right: 0;
     display: flex;
+    right: 0;
     width: 50%;
-    border: solid green;
+   /* border: solid green;*/
     align-items: center;
     justify-content: center;
     background-color: rgb(230, 231, 230);
@@ -148,7 +150,7 @@ header ul {
 
 /*** services and prd *****/
 .imgandtext1 {
-    border: solid green;
+   /* border: solid green;*/
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -156,22 +158,65 @@ header ul {
     margin-top: 50px;
   
 }
+.inh2  {
+   color: grey;
+}
+.hrotate {
+    display: block;
+    font-size: 3rem;
+    color: grey;
+    height: 20vh;
+    margin-top: 8vh;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200;
+    transition: 3s;
+}
+
 .inimg2 {
     width: 50%;
-    height: 100%;
+    height: 65vh;
     display: flex;
     justify-content: end;
+    left: -800px;
+    position: absolute; 
+    /*border: solid green;*/
+    
+}
+.newinimg2{
+    width: 50%;
+    height: 65vh;
+    display: flex;
+    justify-content: end;
+    left: 0;
+    transform: translateY(0);
+   /* border: solid green;*/
+    transition: 3s; 
 }
 
 .intext2 {
+    position: absolute;
+    right: -800px;
     display: flex;
     width: 50%;
     margin:5px;
     align-items: center;
     justify-content: center;
-    text-align: left;
-    
+    text-align: left;  
 }
+.newintext2 {
+    right: 0;
+    display: flex;
+    width: 50%;
+    height:60vh ;
+    margin:5px;
+    align-items: center;
+    justify-content: center;
+    text-align: left; 
+    transform: translateY(0);
+   /* border: solid green;*/
+    transition: 2s;  
+}
+
 .inimg2 img {
     
     border: solid 5px white;
@@ -217,15 +262,18 @@ header ul {
 }
 .ina {
     background-color: rgb(138, 138, 181);
-    margin: 15px auto;
-    width: 15vw;
-    height: 2rem;
-    
+    margin: 5vh auto;
+    width: 10vw;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.h2anda {
+    padding-top: 10vh;
+    height: 30vh;
+    font-size: 1.3rem;
+}
 .h2anda  .ina a {
     text-decoration: none;
     color: white;
