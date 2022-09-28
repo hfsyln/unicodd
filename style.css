@@ -53,6 +53,7 @@ header ul {
 }
 
 .invideo video {
+    border: solid red;
     width: 100%;
    height: 100%;
     position: absolute
@@ -160,6 +161,7 @@ header ul {
 }
 .inh2  {
    color: grey;
+   
 }
 .hrotate {
     display: block;
@@ -169,7 +171,7 @@ header ul {
     margin-top: 8vh;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 200;
-    transition: 3s;
+    transition: 3s; 
 }
 
 .inimg2 {
