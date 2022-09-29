@@ -138,6 +138,29 @@ display: block;
     text-align: center;
     border: solid yellow;
     padding: 25px 25px; 
+    opacity: 0.1;
+    transition: 3s;
+
+}
+.fısh1{
+    width: 20%;
+    height: 35vh;
+    gap: 10px;
+    text-align: center;
+    border: solid yellow;
+    padding: 25px 25px; 
+    opacity: 0.7;
+    
+}
+.fısh2{
+    width: 20%;
+    height: 35vh;
+    gap: 10px;
+    text-align: center;
+    border: solid yellow;
+    padding: 25px 25px; 
+    opacity: 9;
+    
 }
 
 

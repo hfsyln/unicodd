@@ -4,6 +4,7 @@ let fishP = document.querySelector(".fıshtype p ");
 let hrotate = document.querySelector(".rotate");
 let img2 = document.querySelector(`.inimg2`);
 let text2 = document.querySelector(`.intext2`);
+let fıshAll = document.querySelectorAll(".fıshtype")
 
 document.addEventListener(`scroll`, (e)=>{
     console.log((document.body.scrollTop))
@@ -15,9 +16,29 @@ document.addEventListener(`scroll`, (e)=>{
         hrotate.classList.add("hrotate");
         img2.classList.add("newinimg2")
         text2.classList.add("newintext2");
-   }
-   
-})
+        
+        console.log(fıshAll)
+       
+          
+          setTimeout(() => {
+               fıshAll.forEach((item) => {
+                    console.log(item)
+                    item.classList.add(`fısh1`)
+                    
+               }) ;
+             }, "2000")
+     }
+});  
+
+          
+          //setInterval(function(){item.classList.add("fısh1")},1000)
+         
+         
+         
+
+     
+
+
 
 /*
 document.addEventListener(`mousemove`, (e)=>{
@@ -27,8 +48,12 @@ document.addEventListener(`mousemove`, (e)=>{
         text.classList.add("intext1")
      }
 })*/
+let menü = false; 
 
 document.querySelector(".hmbrg").addEventListener("click",()=>{
+  
+ 
+if(menü == false){
      document.querySelector(".menübar").innerHTML = `
      <nav class="navbar bg-light fixed-top">
       <div class="offcanvas-body">
@@ -65,4 +90,9 @@ document.querySelector(".hmbrg").addEventListener("click",()=>{
       </div>
      </nav>
      `
-})
+     menü = true
+     }else {
+          document.querySelector(".menübar").innerHTML = ""
+          menü = false
+     }
+});
