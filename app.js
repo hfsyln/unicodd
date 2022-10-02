@@ -4,13 +4,13 @@ let fishP = document.querySelector(".fıshtype p ");
 let hrotate = document.querySelector(".rotate");
 let img2 = document.querySelector(`.inimg2`);
 let text2 = document.querySelector(`.intext2`);
-let fıshAll = document.querySelectorAll(".fıshtype")
+let fıshAll = document.querySelector(".type-of-fısh")
 
-document.addEventListener(`scroll`, (e)=>{
+window.addEventListener(`scroll`, (e)=>{
     console.log((document.body.scrollTop))
 
 
-   if(document.body.scrollTop >= 0){
+   if(window.scrollY >= 100){
         img.classList.add("inimg1");
         text.classList.add("intext1");
         hrotate.classList.add("hrotate");
@@ -20,13 +20,17 @@ document.addEventListener(`scroll`, (e)=>{
         console.log(fıshAll)
        
           
+        for (let i = 0; i < 5; i++) {
           setTimeout(() => {
-               fıshAll.forEach((item) => {
-                    console.log(item)
-                    item.classList.add(`fısh1`)
-                    
-               }) ;
-             }, "2000")
+               console.log(i)
+               fıshAll.children[i].classList.remove(`fıshtype`)
+               console.log(fıshAll.children[i])
+               fıshAll.children[i].classList.add(`fısh1`)
+               console.log(new Date().toLocaleTimeString())
+          }, i * 1000)
+
+
+     }
      }
 });  
 
