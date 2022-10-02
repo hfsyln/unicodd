@@ -4,46 +4,58 @@ let fishP = document.querySelector(".fıshtype p ");
 let hrotate = document.querySelector(".rotate");
 let img2 = document.querySelector(`.inimg2`);
 let text2 = document.querySelector(`.intext2`);
-let fıshAll = document.querySelector(".type-of-fısh")
+let fıshAll = document.querySelector(".type-of-fısh");
+let foto = document.querySelector(".three-photo");
+let fotoalt = document.querySelector("h2anda")
+
 
 window.addEventListener(`scroll`, (e)=>{
     console.log((document.body.scrollTop))
 
 
    if(window.scrollY >= 100){
-        img.classList.add("inimg1");
-        text.classList.add("intext1");
-        hrotate.classList.add("hrotate");
-        img2.classList.add("newinimg2")
-        text2.classList.add("newintext2");
-        
-        console.log(fıshAll)
-       
-          
-        for (let i = 0; i < 5; i++) {
+
+     for (let i = 0; i < 5; i++) {
           setTimeout(() => {
                console.log(i)
                fıshAll.children[i].classList.remove(`fıshtype`)
                console.log(fıshAll.children[i])
                fıshAll.children[i].classList.add(`fısh1`)
                console.log(new Date().toLocaleTimeString())
-          }, i * 1000)
-
-
+          }, i * 1000) 
+        
      }
-     }
-});  
+     
+     if(window.scrollY >= 400){
+          img.classList.add("inimg1");
+          text.classList.add("intext1");
+     }    
 
-          
-          //setInterval(function(){item.classList.add("fısh1")},1000)
-         
-         
-         
-
+     if(window.scrollY >= 1300){
+     hrotate.classList.add("hrotate");
+        img2.classList.add("newinimg2")
+        text2.classList.add("newintext2");
+     } 
      
 
+     if(window.scrollY >= 3100){
+          for (let i = 0; i < 3; i++) {
+               setTimeout(() => {
+                    console.log(i)
+                    foto.children[i].classList.remove(`foto`)
+                    console.log(fıshAll.children[i])
+                    foto.children[i].classList.add(`foto1`)
+                    console.log(new Date().toLocaleTimeString())
+               }, i * 1000)
+     
+          }
+     
+     } 
+   }
+                  
+});  
 
-
+ 
 /*
 document.addEventListener(`mousemove`, (e)=>{
      console.log(e.y)
