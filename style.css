@@ -138,7 +138,7 @@ display: block;
     text-align: center;
     border: solid yellow;
     padding: 25px 25px; 
-    opacity: 0.1;
+    opacity: 0;
     transition: 3s;
 
 }
@@ -150,16 +150,6 @@ display: block;
     border: solid yellow;
     padding: 25px 25px; 
     opacity: 0.7;
-    
-}
-.fısh2{
-    width: 20%;
-    height: 35vh;
-    gap: 10px;
-    text-align: center;
-    border: solid yellow;
-    padding: 25px 25px; 
-    opacity: 9;
     
 }
 
@@ -326,19 +316,34 @@ display: block;
     /*border: solid green;*/
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 80px;
     text-align: center;
     
 }
+.imgandtext3 h2  {
+font-size: 1.8rem;
+margin: 1rem;
+}
+.imgandtext3 p  {
+    font-size: 1.1rem;
+    margin: 1.5rem;
+    }
 
 .three-photo{
     width: 90%;
     margin:15px auto;
 }
-.three-photo img {
+.foto {
     width: 30%;
     height: 40vh;
     margin: 15px;
+    display: none;
+}
+.foto1{
+    width: 30%;
+    height: 40vh;
+    margin: 15px;
+    
 }
 .ina {
     background-color: rgb(138, 138, 181);
@@ -350,9 +355,10 @@ display: block;
     justify-content: center;
 }
 .h2anda {
-    padding-top: 10vh;
+    padding-top: 5vh;
     height: 30vh;
     font-size: 1.3rem;
+    
 }
 .h2anda  .ina a {
     text-decoration: none;
@@ -369,17 +375,21 @@ display: block;
 
 /***son bölüm */  
 footer{
-
-    margin: 10px;
+    background-color: black;
+    opacity: 0.8;
     display: flex;
-    flex-direction: column;
+    height: 6vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    
 }
 footer a {
     text-decoration: none;
-    color: black;
+    font-size: 1.3rem;
+    color: white;
+
 }
+
 
 
 
